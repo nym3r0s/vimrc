@@ -87,3 +87,7 @@ endfunction
 
 noremap <silent> <c-up> :call <SID>swap_up()<CR>
 noremap <silent> <c-down> :call <SID>swap_down()<CR>
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
