@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'Raimondi/delimitMate'
 " Plugin 'Valloric/YouCompleteMe'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'fatih/vim-go'
 call vundle#end()            " required
@@ -43,12 +44,12 @@ set incsearch
 " Set Encoding
 set encoding=utf8
 " Closing the window when the clang plugin is activated. 
- autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
- autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " For Line numbers
- set number
+set number
 " Show matching braces
- set showmatch
+set showmatch
 " Highlighting current line
 set cursorline
 highlight CursorLine cterm=bold ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
