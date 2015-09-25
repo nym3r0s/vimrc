@@ -8,7 +8,8 @@ Plugin 'Raimondi/delimitMate'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
+Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 
 " Color Scheme
@@ -93,3 +94,6 @@ noremap <silent> <c-down> :call <SID>swap_down()<CR>
 :command Wq wq
 :command W w
 :command Q q
+
+" NERDTree shortcuts
+map <C-n> :NERDTreeToggle<CR>
