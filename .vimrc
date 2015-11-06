@@ -8,6 +8,8 @@ Plugin 'Raimondi/delimitMate'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 "Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
@@ -97,3 +99,9 @@ noremap <silent> <c-down> :call <SID>swap_down()<CR>
 
 " NERDTree shortcuts
 map <C-n> :NERDTreeToggle<CR>
+
+" Enable vim-airline
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
