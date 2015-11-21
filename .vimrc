@@ -5,12 +5,10 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'Raimondi/delimitMate'
-" Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
-"Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 
@@ -26,9 +24,6 @@ filetype indent on
 
 " Mapping f8 for c++ compiling and executing
 map <F8> :!g++ % && ./a.out <CR>
-" Mapping ycm_extra_conf for clang and c++ completion
-let g:ycm_global_ycm_extra_conf ='/home/gsrinivas/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
-
 
 " Setting Tab and indent Widths
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 
@@ -46,9 +41,6 @@ set ruler
 set incsearch
 " Set Encoding
 set encoding=utf8
-" Closing the window when the clang plugin is activated. 
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " For Line numbers
 set number
 " Show matching braces
@@ -56,7 +48,6 @@ set showmatch
 " Highlighting current line
 set cursorline
 highlight CursorLine cterm=bold ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-"guibg=Grey40
 " Set No backups
 set nobackup
 set nowb
@@ -92,6 +83,7 @@ endfunction
 
 noremap <silent> <c-up> :call <SID>swap_up()<CR>
 noremap <silent> <c-down> :call <SID>swap_down()<CR>
+" Common typos
 :command WQ wq
 :command Wq wq
 :command W w
