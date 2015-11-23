@@ -1,6 +1,11 @@
 # vimrc
-My .vimrc for personal and public use.
 
+A slim and powerful .vimrc.
+
+##Special Keybindings
+
+* `Ctrl + up` - Move current line up
+* `Ctrl + down` - Move current line down
 
 ##Needs/Uses:
 
