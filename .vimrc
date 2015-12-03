@@ -1,16 +1,15 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" Vundle Config
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'Raimondi/delimitMate'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-call vundle#end()            " required
+call plug#begin('~/.vim/plugged')
+
+Plug 'Raimondi/delimitMate'
+Plug 'jiangmiao/auto-pairs'
+Plug 'flazz/vim-colorschemes'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+call plug#end()
 
 " Color Scheme
 color gruvbox 
@@ -92,7 +91,7 @@ noremap <silent> <c-down> :call <SID>swap_down()<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 " Enable vim-airline
-set laststatus=2
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+" set laststatus=2
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
