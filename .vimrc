@@ -14,7 +14,6 @@ call vundle#end()            " required
 
 " Color Scheme
 color gruvbox 
-"colorscheme solarize " Other Color Scheme.
 
 filetype plugin indent on    " required
 syntax enable
