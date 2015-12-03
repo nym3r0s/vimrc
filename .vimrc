@@ -8,7 +8,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-
+Plug 'fatih/vim-go', { 'for': 'go' }
 call plug#end()
 
 " Color Scheme
@@ -95,3 +95,14 @@ map <C-n> :NERDTreeToggle<CR>
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#left_sep = ' '
 " let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" Vim Go customizations
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:go_fmt_fail_silently = 1
+let g:go_play_open_browser = 0
