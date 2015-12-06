@@ -9,7 +9,7 @@ A slim and powerful .vimrc.
 
 ##Needs/Uses:
 
-* Vundle (https://github.com/gmarik/Vundle.vim)
+* vim-plug (https://github.com/junegunn/vim-plug)
 * deLimitMate (https://github.com/Raimondi/delimitMate)
 * YouCompleteMe (https://github.com/Valloric/YouCompleteMe) 
 * delimitMate (https://github.com/Raimondi/delimitMate)
@@ -21,9 +21,9 @@ A slim and powerful .vimrc.
 
 ##Installation
 
-* Install Vundle (https://github.com/gmarik/Vundle.vim)
+* Install vim-plug (https://github.com/junegunn/vim-plug)
 * Place the .vimrc in your `$HOME` directory. Do a `cd ~` if you do not know where it is.
-* Open vim and type `:PluginInstall` 
+* Open vim and type `:PlugInstall` 
 * Re-open vim and enjoy!
 
 :copyright: 2015 Gokul Srinivas
