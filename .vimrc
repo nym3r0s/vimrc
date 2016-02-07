@@ -6,13 +6,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'Raimondi/delimitMate'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flazz/vim-colorschemes'
+Plug 'chriskempson/base16-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 call plug#end()
-
-" Color Scheme
-color gruvbox 
 
 filetype plugin indent on    " required
 syntax enable
@@ -20,11 +18,15 @@ set background=dark
 hi Normal ctermbg=none
 filetype indent on
 
+" Color Scheme
+"color gruvbox 
+color base16-google 
+
 " Mapping f8 for c++ compiling and executing
 map <F8> :!g++ % && ./a.out <CR>
 
 " Setting Tab and indent Widths
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 
 set smarttab
 set expandtab
 set title
