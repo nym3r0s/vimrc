@@ -12,6 +12,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 call plug#end()
 
+let base16colorspace=256  " Access colors present in 256 colorspace
+
 filetype plugin indent on    " required
 syntax enable
 set background=dark
