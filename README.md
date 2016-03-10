@@ -1,13 +1,27 @@
-# vimrc
+#vimrc
 
-A slim and powerful .vimrc.
+A slim and powerful vimrc.
+
+##Installation
+
+To install, simply run the following command.
+
+Bash : 
+```sh
+bash <(curl -s https://gist.githubusercontent.com/GokulSrinivas/40fadf2e94ec1f164d3c/raw/c317df8da951c49f884759ee5df90312d57d2aaa/install_vim.sh)
+```
+Zsh :
+```sh
+zsh <(curl -s https://gist.githubusercontent.com/GokulSrinivas/40fadf2e94ec1f164d3c/raw/c317df8da951c49f884759ee5df90312d57d2aaa/install_vim.sh)
+```
 
 ##Special Keybindings
 
+In normal mode,
 * `Ctrl + up` - Move current line up
 * `Ctrl + down` - Move current line down
 
-##Needs/Uses:
+##Uses:
 
 * vim-plug (https://github.com/junegunn/vim-plug)
 * deLimitMate (https://github.com/Raimondi/delimitMate)
@@ -19,11 +33,11 @@ A slim and powerful .vimrc.
 * vim-fugitive (https://github.com/tpope/vim-fugitive)
 * nerdtree (https://github.com/scrooloose/nerdtree)
 
-##Installation
+##Manual Installation
 
 * Install vim-plug (https://github.com/junegunn/vim-plug)
 * Place the .vimrc in your `$HOME` directory. Do a `cd ~` if you do not know where it is.
 * Open vim and type `:PlugInstall` 
 * Re-open vim and enjoy!
 
-:copyright: 2015 Gokul Srinivas
+copyright: 2016 Gokul Srinivas
