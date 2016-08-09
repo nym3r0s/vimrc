@@ -21,8 +21,7 @@ hi Normal ctermbg=none
 filetype indent on
 
 " Color Scheme
-"color gruvbox 
-color base16-google 
+color gruvbox 
 
 " Mapping f8 for c++ compiling and executing
 map <F8> :!g++ % && ./a.out <CR>
@@ -85,20 +84,18 @@ endfunction
 
 noremap <silent> <c-up> :call <SID>swap_up()<CR>
 noremap <silent> <c-down> :call <SID>swap_down()<CR>
+
 " Common typos
 :command WQ wq
 :command Wq wq
 :command W w
 :command Q q
 
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
+
 " NERDTree shortcuts
 map <C-n> :NERDTreeToggle<CR>
-
-" Enable vim-airline
-" set laststatus=2
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline#extensions#tabline#left_sep = ' '
-" let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " Vim Go customizations
 
