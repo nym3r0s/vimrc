@@ -2,17 +2,19 @@
 
 A slim and powerful vimrc.
 
+![demo](https://cloud.githubusercontent.com/assets/6184049/18015626/1fceebdc-6be6-11e6-96c6-c5e369feac6c.gif)
+
 ##Installation
 
 To install, simply run the following command.
 
 Bash : 
 ```sh
-bash <(curl -s https://gist.githubusercontent.com/GokulSrinivas/40fadf2e94ec1f164d3c/raw/c317df8da951c49f884759ee5df90312d57d2aaa/install_vim.sh)
+bash <(curl -s https://gist.githubusercontent.com/GokulSrinivas/40fadf2e94ec1f164d3c/raw/1e017d0e82294b5c2afbe9a18224a8c1a81c6784/install_vim.sh)
 ```
 Zsh :
 ```sh
-zsh <(curl -s https://gist.githubusercontent.com/GokulSrinivas/40fadf2e94ec1f164d3c/raw/c317df8da951c49f884759ee5df90312d57d2aaa/install_vim.sh)
+zsh <(curl -s https://gist.githubusercontent.com/GokulSrinivas/40fadf2e94ec1f164d3c/raw/1e017d0e82294b5c2afbe9a18224a8c1a81c6784/install_vim.sh)
 ```
 
 ##Special Keybindings
