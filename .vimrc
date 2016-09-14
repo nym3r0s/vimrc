@@ -53,7 +53,7 @@ set expandtab
 set title
 set autoindent
 set smartindent
-
+set backspace=indent,eol,start
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlight search results
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
