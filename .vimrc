@@ -17,10 +17,14 @@ filetype off                  " required
 " Install all plugins and load them only when required.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-Plug 'Raimondi/delimitMate'
+"Plug 'Raimondi/delimitMate'
+Plug 'mattn/emmet-vim', { 'for': 'html' }
 Plug 'jiangmiao/auto-pairs'
-Plug 'flazz/vim-colorschemes'
-Plug 'tpope/vim-fugitive'
+Plug 'ervandew/supertab'
+Plug 'easymotion/vim-easymotion'
+"Plug 'flazz/vim-colorschemes'
+Plug 'dracula/vim'
+"Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 call plug#end()
@@ -37,7 +41,8 @@ hi Normal ctermbg=none
 filetype indent on
 
 " Color Scheme
-color gruvbox 
+color dracula 
+"color gruvbox 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapping f8 for c++ compiling and executing
