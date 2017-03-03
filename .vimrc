@@ -18,15 +18,16 @@ filetype off                  " required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 "Plug 'Raimondi/delimitMate'
-Plug 'mattn/emmet-vim', { 'for': 'html' }
+Plug 'mattn/emmet-vim', { 'for': ['html','php'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'ervandew/supertab'
 Plug 'easymotion/vim-easymotion'
-"Plug 'flazz/vim-colorschemes'
 Plug 'dracula/vim'
-"Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -39,7 +40,7 @@ syntax enable
 set background=dark
 hi Normal ctermbg=none
 filetype indent on
-
+set encoding=utf-8
 " Color Scheme
 color dracula 
 "color gruvbox 
@@ -165,3 +166,54 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_fail_silently = 1
 let g:go_play_open_browser = 0
+
+set laststatus=2
+"let g:airline_powerline_fonts = 1
+let g:airline_theme='dark'
+let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 1
+set ttimeoutlen=0
+
+let g:airline_left_sep=""
+let g:airline_left_alt_sep=""
+let g:airline_right_sep=""
+let g:airline_right_alt_sep=""
+if !exists('g:airline_symbols')
+    " Symbols for Unicode terminals
+    if &encoding==?'utf-8' 
+        let g:airline_symbols= {
+                    \ 'paste': 'PASTE',
+                    \ 'spell': 'SPELL',
+                    \ 'readonly': "\u229D",
+                    \ 'whitespace': "\u2632",
+                    \ 'linenr': "\u2630",
+                    \ 'maxlinenr': "\u33D1",
+                    \ 'branch': "\u16A0",
+                    \ 'notexists': "\u0246",
+                    \ 'modified': '+', 
+                    \ 'space': ' ',
+                    \ 'crypt': "\xf0\x9f\x94\x92",
+                    \} 
+    " Symbols for ASCII terminals
+    else
+        let g:airline_symbols={
+                    \ 'paste': 'PASTE',
+                    \ 'spell': 'SPELL',
+                    \ 'readonly': 'RO',
+                    \ 'whitespace': '!',
+                    \ 'linenr': 'ln',
+                    \ 'maxlinenr': ':',
+                    \ 'branch': '',
+                    \ 'notexists': '?',
+                    \ 'modified': '+',
+                    \ 'space': ' ',
+                    \ 'crypt': 'cr',
+                    \ }
+    endif
+endif
+
+" Fugitive-specific mappings
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gs :Gstatus<CR>
