@@ -17,7 +17,6 @@ filetype off                  " required
 " Install all plugins and load them only when required.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-"Plug 'Raimondi/delimitMate'
 Plug 'mattn/emmet-vim', { 'for': ['html','php'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'ervandew/supertab'
@@ -27,7 +26,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
-Plug 'flazz/vim-colorschemes'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -43,7 +42,6 @@ filetype indent on
 set encoding=utf-8
 " Color Scheme
 color dracula 
-"color gruvbox 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapping f8 for c++ compiling and executing
@@ -167,8 +165,21 @@ let g:go_highlight_build_constraints = 1
 let g:go_fmt_fail_silently = 1
 let g:go_play_open_browser = 0
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Always show the statusbar
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set laststatus=2
-"let g:airline_powerline_fonts = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable the list of buffers
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline#extensions#tabline#enabled = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show just the filename
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline#extensions#tabline#fnamemod = ':t'
+
 let g:airline_theme='dark'
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
@@ -194,7 +205,7 @@ if !exists('g:airline_symbols')
                     \ 'space': ' ',
                     \ 'crypt': "\xf0\x9f\x94\x92",
                     \} 
-    " Symbols for ASCII terminals
+        " Symbols for ASCII terminals
     else
         let g:airline_symbols={
                     \ 'paste': 'PASTE',
@@ -217,3 +228,16 @@ nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gb :Gblame<CR>
 nnoremap <Leader>gs :Gstatus<CR>
+
+" Mappings for buffer
+nnoremap <PageUp>   :bprevious<CR>
+nnoremap <PageDown> :bnext<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show only files tracked by git in CtrlP
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_user_command = [
+            \    '.git', 
+            \    'cd %s && git ls-files . -co --exclude-standard',
+            \    'find %s -type f'
+            \]
