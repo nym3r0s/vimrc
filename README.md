@@ -2,7 +2,7 @@
 
 A slim and powerful vimrc.
 
-![demo](https://cloud.githubusercontent.com/assets/6184049/18015626/1fceebdc-6be6-11e6-96c6-c5e369feac6c.gif)
+![demo](https://media.giphy.com/media/QX3teJi4ybnqg/giphy.gif)
 
 ## Installation
 
