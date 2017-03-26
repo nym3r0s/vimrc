@@ -29,20 +29,20 @@ In normal mode,
 
 ## Uses:
 
-* [emmet-vim] (https://github.com/mattn/emmet-vim)
-* [auto-pairs] (https://github.com/jiangmiao/auto-pairs)
-* [supertab] (https://github.com/ervandew/supertab)
-* [vim-easymotion] (https://github.com/easymotion/vim-easymotion)
-* [dracula] (https://github.com/dracula/vim)
-* [nerdtree] (https://github.com/scrooloose/nerdtree)
-* [vim-go] (https://github.com/fatih/vim-go)
-* [fugitive] (https://github.com/tpope/vim-fugitive)
-* [vim-airline] (https://github.com/vim-airline/vim-airline)
-* [ctrlp] (https://github.com/ctrlpvim/ctrlp.vim)
+* [emmet-vim](https://github.com/mattn/emmet-vim)
+* [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+* [supertab](https://github.com/ervandew/supertab)
+* [vim-easymotion](https://github.com/easymotion/vim-easymotion)
+* [dracula](https://github.com/dracula/vim)
+* [nerdtree](https://github.com/scrooloose/nerdtree)
+* [vim-go](https://github.com/fatih/vim-go)
+* [fugitive](https://github.com/tpope/vim-fugitive)
+* [vim-airline](https://github.com/vim-airline/vim-airline)
+* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 
 ## Manual Installation
 
-* Install [vim-plug] (https://github.com/junegunn/vim-plug)
+* Install [vim-plug](https://github.com/junegunn/vim-plug)
 * Place the .vimrc in your `$HOME` directory. Do a `cd ~` if you do not know where it is.
 * Open vim and type `:PlugInstall` 
 * Re-open vim and enjoy!
