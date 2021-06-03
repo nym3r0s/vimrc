@@ -1,8 +1,6 @@
 # vimrc
 
-A slim and powerful vimrc.
-
-![demo](https://media.giphy.com/media/QX3teJi4ybnqg/giphy.gif)
+My slim and powerful vimrc.
 
 ## Installation
 
@@ -10,11 +8,11 @@ To install, simply run the following command.
 
 Bash : 
 ```sh
-bash <(curl -s https://gist.githubusercontent.com/GokulSrinivas/40fadf2e94ec1f164d3c/raw/1e017d0e82294b5c2afbe9a18224a8c1a81c6784/install_vim.sh)
+bash <(curl -s https://gist.githubusercontent.com/nym3r0s/40fadf2e94ec1f164d3c/raw/3d4515f92a95e95e30f0bb693cfdcf47bdffdad7/install_vim.sh) 
 ```
 Zsh :
 ```sh
-zsh <(curl -s https://gist.githubusercontent.com/GokulSrinivas/40fadf2e94ec1f164d3c/raw/1e017d0e82294b5c2afbe9a18224a8c1a81c6784/install_vim.sh)
+zsh <(curl -s https://gist.githubusercontent.com/nym3r0s/40fadf2e94ec1f164d3c/raw/3d4515f92a95e95e30f0bb693cfdcf47bdffdad7/install_vim.sh) 
 ```
 
 ## Special Keybindings
@@ -51,4 +49,4 @@ In normal mode,
 
 [MIT](https://github.com/GokulSrinivas/vimrc/blob/master/LICENSE)
 
-&copy; 2017 Gokul Srinivas
+&copy; 2021 Gokul Srinivas
